@@ -170,7 +170,7 @@ python -m <your-package-name>
 You can [publish](https://packaging.python.org/en/latest/tutorials/packaging-projects/) your package like you would publish any other Python package.
 
 ## Install
-If you install your package from PyPI, you can import your results from the results sub-package.
+If you install your package from PyPI, depending on how the package is configured, you can run the `__main__.py` module or import your results from the results sub-package.
 
 ### Install your package from PyPI.
 ```bash
