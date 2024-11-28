@@ -112,7 +112,7 @@ pip install cookiecutter
 
 ### Use the Cookiecutter to create a Data Science Project from the template repository.
 ```bash
-cookiecutter https://github.com/faranalytics/data_science_project_cookiecutter.git
+cookiecutter https://github.com/faranalytics/data_science_project.git --checkout cookiecutter
 ```
 
 ### Complete the Cookiecutter form.
