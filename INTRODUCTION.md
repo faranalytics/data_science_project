@@ -65,7 +65,8 @@ An editable install, also known as a development install, will make changes to y
 pip install -e .
 ```
 
-## Examples
+### Run an example.
+
 Open the `package/methods/notebooks/main.ipynb` notebook and run the cells.
 ```python
 # Import the path of each sub-module.
@@ -158,7 +159,7 @@ python -m <your-package-name>
 ```
 
 ## Publish
-You can [publish](https://hatch.pypa.io/1.9/publish/) your package like you would publish an ordinary Python package.  If you install your package from PyPI you can import your results from the results sub-package.
+You can [publish](https://packaging.python.org/en/latest/tutorials/packaging-projects/) your package like you would publish an ordinary Python package.  If you install your package from PyPI you can import your results from the results sub-package.
 
 ### Install your package from PyPI.
 ```bash
