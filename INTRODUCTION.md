@@ -14,6 +14,7 @@ One important advantage of this approach is that utility functions can be conven
 - [Create a Data Science Project Using the Cookiecutter](#create-a-data-science-project-using-the-cookiecutter)
 - [Dependencies](#dependencies)
 - [Pipelines](#pipelines)
+- [Publish](#publish)
 
 ## Explore
 
@@ -179,5 +180,19 @@ pip install -e .
 ## Pipelines
 You can use `__main__.py` in order to define your project's pipeline.  Once your package is installed and your pipeline is defined in your `__main__.py` module, you can run your package's pipeline using the `-m` option.
 ```bash
-python -m your-package-name
+python -m <your-package-name>
+```
+
+## Publish
+You can [publish](https://hatch.pypa.io/1.9/publish/) your package like you would publish an ordinary Python package.  When you package is installed you can import results from package.
+```bash
+from package.results import iris
+
+iris
+```
+```python
+[['5.1', '3.5', '1.4', '0.2', 'Iris-setosa'],
+ ['4.9', '3.0', '1.4', '0.2', 'Iris-setosa'],
+ ['4.7', '3.2', '1.3', '0.2', 'Iris-setosa'],
+ ...]
 ```
