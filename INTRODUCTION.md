@@ -185,7 +185,7 @@ iris
 ```
 
 ### Run the pipeline.
-If your package has a pipeline defined in `__main__.py` you can run your project's pipeline using the `-m` option.
+If your package has a pipeline defined in `__main__.py` you can run your packages's pipeline using the `-m` option.
 ```bash
 python -m <your-package-name>
 ```
