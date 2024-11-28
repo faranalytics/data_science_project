@@ -19,7 +19,7 @@ One important advantage of this approach is that utility functions can be conven
 
 ## Explore
 
-You can clone this repository, explore, and modify it to meet your needs or [create a project using the cookiecutter](#create-a-data-science-project-using-the-cookiecutter).
+You can clone this repository, explore, and modify it to meet your needs or [create a project using the Cookiecutter](#create-a-data-science-project-using-the-cookiecutter).
 ### Clone the repository.
 ```bash
 git clone https://github.com/faranalytics/data_science_project.git
