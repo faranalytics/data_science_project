@@ -17,6 +17,7 @@ One important advantage of this approach is that utility functions can be conven
 
 ## Explore
 
+You can clone this repository, explore, and modify it to meet your needs or [create a project using the cookiecutter](#create-a-data-science-project-using-the-cookiecutter).
 ### Clone the repository.
 ```bash
 git clone https://github.com/faranalytics/data_science_project.git
@@ -52,17 +53,9 @@ cd data_science_project/project
     └── README.md
 ```
 
-### Optionally rename the package.
-1. Change the name of the top-level `package` directory.
-2. Modify the `name` option in `pyproject.toml` to reflect your chosen name.
-```python
-[project]
-name = "package" # Choose a unique name for your package.
-```
-
 ### Activate your environment if you are using a package manager (e.g., conda).
 ```bash
-conda activate your-environment
+conda activate <your-environment>
 ```
 
 ### Install the package in editable mode.  
@@ -135,14 +128,31 @@ pickle.dump(data, open(RESULTS_PATH.joinpath("data.pkl"), "wb"))
 
 ## Create a Data Science Project Using the Cookiecutter
 
-Install the `cookiecutter` package.
+### Install the Cookiecutter package.
 ```bash
 pip install cookiecutter
 ```
 
-Use the cookiecutter to create a Data Science Project from the template repository.
+### Use the Cookiecutter to create a Data Science Project from the template repository.
 ```bash
 cookiecutter https://github.com/faranalytics/data_science_project_cookiecutter.git
+```
+
+### Change directory into the repository's project directory.
+This is the top-level directory of a conventional Python package.
+```bash
+cd <project_name>
+```
+
+### Activate your environment if you are using a package manager (e.g., conda).
+```bash
+conda activate <your-environment>
+```
+
+### Install the package in editable mode.  
+An editable install, also known as a development install, will make changes to your package modules immediately available when you restart your kernel.
+```bash
+pip install -e .
 ```
 
 ## Dependencies
