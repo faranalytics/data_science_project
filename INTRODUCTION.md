@@ -1,4 +1,4 @@
-# Data Science Project
+# The Data Science Project
 A Python [flat-layout](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/) project template for data science projects.
 
 ## Introduction
