@@ -115,10 +115,17 @@ pip install cookiecutter
 cookiecutter https://github.com/faranalytics/data_science_project_cookiecutter.git
 ```
 
+### Complete the Cookiecutter form.
+```bash
+  [1/2] project_name (project): my_project_name
+  [2/2] package_name (package): my_package_name
+```
+> **NB** You can give your project and package the same name.
+
 ### Change directory into the repository's project directory.
 This is the top-level directory of a conventional Python package.
 ```bash
-cd <project_name>
+cd <my_project_name>
 ```
 
 ### Activate your environment if you are using a package manager (e.g., conda).
