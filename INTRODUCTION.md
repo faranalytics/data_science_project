@@ -166,8 +166,9 @@ pip install <your-package-name>
 ```
 
 ### Import the iris dataset from the results sub-package.
+Create a Notebook or Python file and import the iris dataset.  Inspect `project/package/results/__init__.py` to see how it works.
 ```python
-from package.results import iris
+from <your-package-name>.results import iris
 
 iris
 ```
