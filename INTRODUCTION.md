@@ -184,8 +184,15 @@ python -m <your-package-name>
 ```
 
 ## Publish
-You can [publish](https://hatch.pypa.io/1.9/publish/) your package like you would publish an ordinary Python package.  When you package is installed you can import results from package.
+You can [publish](https://hatch.pypa.io/1.9/publish/) your package like you would publish an ordinary Python package.  If you install your package from PyPI you can import your results from the results sub-package.
+
+### Install your package from PyPI.
 ```bash
+pip install <your-package-name>
+```
+
+### Import the iris dataset from the results sub-package.
+```python
 from package.results import iris
 
 iris
