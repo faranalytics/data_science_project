@@ -163,7 +163,7 @@ python -m <your-package-name>
 You can [publish](https://packaging.python.org/en/latest/tutorials/packaging-projects/) your package like you would publish an ordinary Python package.  
 
 ## Install
-If you install your package from PyPI you can import your results from the results sub-package.
+If you install your package from PyPI, you can import your results from the results sub-package.
 
 ### Install your package from PyPI.
 ```bash
@@ -182,4 +182,10 @@ iris
  ['4.9', '3.0', '1.4', '0.2', 'Iris-setosa'],
  ['4.7', '3.2', '1.3', '0.2', 'Iris-setosa'],
  ...]
+```
+
+### Run the pipeline.
+If your package has a pipeline defined in `__main__.py` you can run your project's pipeline using the `-m` option.
+```bash
+python -m <your-package-name>
 ```
