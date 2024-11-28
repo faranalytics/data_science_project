@@ -120,7 +120,7 @@ cookiecutter https://github.com/faranalytics/data_science_project_cookiecutter.g
   [1/2] project_name (project): my_project_name
   [2/2] package_name (package): my_package_name
 ```
-> **NB** You can give your project and package the same name.
+> You can give your project and package the same name.
 
 ### Change directory into the repository's project directory.
 This is the top-level directory of a conventional Python package.
@@ -192,7 +192,7 @@ iris
 ```
 
 ### Run the pipeline.
-If your package has a pipeline defined in `__main__.py` you can run your packages's pipeline using the `-m` option.
+If your package has a pipeline defined in `__main__.py` you can run your package's pipeline using the `-m` option.
 ```bash
 python -m <your-package-name>
 ```
