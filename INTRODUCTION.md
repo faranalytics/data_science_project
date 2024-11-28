@@ -1,5 +1,5 @@
 # Data Science Project
-A Python [flat-layout](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/) project design for data science projects.
+A Python [flat-layout](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/) project template for data science projects.
 
 ## Introduction
 
@@ -10,11 +10,12 @@ This repository describes an alternative approach using a conventional Python [f
 One important advantage of this approach is that utility functions can be conveniently imported into notebooks from anywhere in the package. It makes imports seamless without having to modify `sys.path` or setting the `PYTHONPATH` environment variable.
 
 ## Table of Contents
-- [Usage](#usage)
+- [Explore](#explore)
+- [Create a Data Science Project Using the Cookiecutter](#create-a-data-science-project-using-the-cookiecutter)
 - [Dependencies](#dependencies)
 - [Pipelines](#pipelines)
 
-## Usage
+## Explore
 
 ### Clone the repository.
 ```bash
@@ -131,6 +132,19 @@ pickle.dump(data, open(RESULTS_PATH.joinpath("data.pkl"), "wb"))
  ['6.2', '3.4', '5.4', '2.3', 'Iris-virginica'],
  ['5.9', '3.0', '5.1', '1.8', 'Iris-virginica']]
 ```
+
+## Create a Data Science Project Using the Cookiecutter
+
+Install the `cookiecutter` package.
+```bash
+pip install cookiecutter
+```
+
+Use the cookiecutter to create a Data Science Project from the template repository.
+```bash
+cookiecutter https://github.com/faranalytics/data_science_project_cookiecutter.git
+```
+
 ## Dependencies
 You can add dependencies to your project by modifying the `depdencies` section of the `pyproject.toml`.  
 
