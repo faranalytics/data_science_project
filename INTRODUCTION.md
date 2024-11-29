@@ -144,6 +144,7 @@ dependencies = [
     ]
 ...
 ```
+
 Reinstall your environment after specifying a new dependency.
 ```bash
 pip install -e .
