@@ -109,7 +109,7 @@ cookiecutter https://github.com/faranalytics/data_science_project.git --checkout
   [1/2] project_name (project): my_project_name
   [2/2] package_name (package): my_package_name
 ```
-> You can give your project and package the same name.
+You can give your project and package the same name.
 
 ### Change directory into the repository's project directory.
 This is the top-level directory of a conventional Python package.
