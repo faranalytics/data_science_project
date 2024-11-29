@@ -157,4 +157,4 @@ python -m <your-package-name>
 ```
 
 ## Publish
-You can [publish](https://packaging.python.org/en/latest/tutorials/packaging-projects/) your package like you would publish any other Python package.
+You can publish your package by following the instructions in the [tutorial](https://packaging.python.org/en/latest/tutorials/packaging-projects/).  Alternatively, you can use the [Hatch](https://hatch.pypa.io/latest/) CLI tool.
