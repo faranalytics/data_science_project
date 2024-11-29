@@ -15,7 +15,6 @@ One important advantage of this approach is that utility functions can be conven
 - [Dependencies](#dependencies)
 - [Pipelines](#pipelines)
 - [Publish](#publish)
-- [Install](#install)
 
 ## Explore
 
@@ -66,43 +65,33 @@ An editable install, also known as a development install, will make changes to y
 pip install -e .
 ```
 
-### Run an example.
+### Open the `package/methods/notebooks/main.ipynb` notebook and run the cells.
 
-Open the `package/methods/notebooks/main.ipynb` notebook and run the cells.
+Import the path of each sub-package.
 ```python
-# Import the path of each sub-module.
 from package.materials import MATERIALS_PATH
 from package.methods import METHODS_PATH
 from package.results import RESULTS_PATH
 ```
+
+Import a utility function from the methods sub-package.
 ```python
-# Import a utility function from the methods package.
 from package.methods.utils import say_hello
 
 say_hello()
 ```
+
+Read data from the `MATERIALS_PATH` and write the data to the `RESULTS_PATH`.
 ```python
 from pprint import pprint
 import pickle
-
-# Read data from the MATERIALS_PATH.
 data = [
     line.strip().split(",")
     for line in open(MATERIALS_PATH.joinpath("iris/iris.data")).readlines()[:-1]
 ]
 
-pprint(data)
-
-# Write the data to the RESULTS_PATH.
 pickle.dump(data, open(RESULTS_PATH.joinpath("data.pkl"), "wb"))
 ```
-```bash
-[['5.1', '3.5', '1.4', '0.2', 'Iris-setosa'],
- ['4.9', '3.0', '1.4', '0.2', 'Iris-setosa'],
- ['4.7', '3.2', '1.3', '0.2', 'Iris-setosa'],
- ...]
-```
-
 ## Create a Data Science Project Using the Cookiecutter
 
 ### Install the Cookiecutter package.
@@ -168,31 +157,3 @@ python -m <your-package-name>
 
 ## Publish
 You can [publish](https://packaging.python.org/en/latest/tutorials/packaging-projects/) your package like you would publish any other Python package.
-
-## Install
-If you install your package from PyPI, depending on how the package is configured, you can run the `__main__.py` module or import your results from the results sub-package.
-
-### Install your package from PyPI.
-```bash
-pip install <your-package-name>
-```
-
-### Import the iris dataset from the results sub-package.
-Create a Notebook or Python file and import the iris dataset.  Inspect `project/package/results/__init__.py` to see how it works.
-```python
-from <your-package-name>.results import iris
-
-iris
-```
-```python
-[['5.1', '3.5', '1.4', '0.2', 'Iris-setosa'],
- ['4.9', '3.0', '1.4', '0.2', 'Iris-setosa'],
- ['4.7', '3.2', '1.3', '0.2', 'Iris-setosa'],
- ...]
-```
-
-### Run the pipeline.
-If your package has a pipeline defined in `__main__.py` you can run your package's pipeline using the `-m` option.
-```bash
-python -m <your-package-name>
-```
