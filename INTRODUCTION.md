@@ -81,7 +81,7 @@ from package.methods.utils import say_hello
 say_hello()
 ```
 
-Read data from the `MATERIALS_PATH` and write the data to the `RESULTS_PATH`.
+Read data from the `MATERIALS_PATH`, transform it into a list of lists, and write the data to the `RESULTS_PATH`.
 ```python
 from pprint import pprint
 import pickle
