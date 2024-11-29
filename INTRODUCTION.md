@@ -50,7 +50,7 @@ cd data_science_project/project
     │   └── results ⬅ You can put the outputs of your scripts (e.g., tables and visualizations) in the results directory.
     │       ├── __init__.py
     │       └── README.md
-    ├── pyproject.toml
+    ├── pyproject.toml ⬅ The project is configured to use the Hatch project manager.
     └── README.md
 ```
 
