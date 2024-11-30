@@ -99,7 +99,7 @@ pickle.dump(data, open(RESULTS_PATH.joinpath("data.pkl"), "wb"))
 pip install cookiecutter
 ```
 
-### Use the Cookiecutter to create a Data Science Project from the template repository.
+### Use the Cookiecutter to create a Data Science Project from the cookiecutter branch.
 ```bash
 cookiecutter https://github.com/faranalytics/data_science_project.git --checkout cookiecutter
 ```
