@@ -34,24 +34,43 @@ cd data_science_project/project
 This is a conventional [flat-layout](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/) Python project.  The project follows all the conventions of a formal Python project.
 ```
 ├── project ⬅ This is the project directory.  Optionally chose a name for your project.
+    |
     ├── __about__.py
+    |
     ├── LICENSE
+    |
     ├── package ⬅ This is the package directory.  Optionally give the package a unique name.
+    |   |
     │   ├── __init__.py
+    |   |
     |   ├── __main__.py
+    |   |
     │   ├── materials ⬅ You can put your datasets and models in the materials directory.
+    |   |   |
     │   │   ├── __init__.py
+    |   |   |
     │   │   └── README.md
+    |   |
     │   ├── methods ⬅ You can put your utility functions and notebooks in the methods directory.
+    |   |   |
     │   │   ├── __init__.py
+    |   |   |
     │   │   ├── notebooks
+    |   |   |   |
     │   │   │   └── main.ipynb
+    |   |   |
     │   │   ├── README.md
+    |   |   |
     │   │   └── utils.py
+    |   |
     │   └── results ⬅ You can put the outputs of your scripts (e.g., tables and visualizations) in the results directory.
+    |       |
     │       ├── __init__.py
+    |       |
     │       └── README.md
+    |   
     ├── pyproject.toml ⬅ The project is configured to use the Hatch project manager.
+    |
     └── README.md
 ```
 
