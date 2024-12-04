@@ -17,7 +17,7 @@ One important advantage of this approach is that utility functions can be conven
 - [Publish](#publish)
 
 ## Project Layout
-You can clone this repository and follow this short tutorial in order to explore the project layout.  If you would like to start a new project you can [create a project using the Cookiecutter](#create-a-data-science-project-using-the-cookiecutter).
+You can clone this repository and follow this short tutorial in order to explore the project layout.  If you would like to start a new project, you can [create a project using the Cookiecutter](#create-a-data-science-project-using-the-cookiecutter).
 
 ### Clone the repository.
 ```bash
@@ -31,7 +31,7 @@ cd data_science_project/project
 ```
 
 ### The directory structure looks like this.
-This is a conventional [flat-layout](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/) Python project.
+This is a conventional [flat-layout](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/) Python project.  The project follows all the conventions of a formal Python project.
 ```
 ├── project ⬅ This is the project directory.  Optionally chose a name for your project.
     ├── __about__.py
