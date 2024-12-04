@@ -18,7 +18,8 @@ classifiers = [
 ]
 dependencies = [
   "hatch", 
-  "ipykernel"
+  "ipykernel",
+  "papermill"
 ]
 
 [project.urls]
