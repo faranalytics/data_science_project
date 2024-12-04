@@ -19,7 +19,7 @@ One important advantage of this approach is that utility functions can be conven
 ## Project Layout
 You can clone this repository and follow this short tutorial in order to explore the project layout.  If you want to start a new project, you can [create a project using the Cookiecutter](#create-a-data-science-project-using-the-cookiecutter).
 
-## Instructions
+### Instructions
 
 #### Clone the repository.
 ```bash
