@@ -201,6 +201,8 @@ You can use `__main__.py` in order to define your project's pipeline.  Once your
 ```bash
 python -m <your-package-name>
 ```
+
+### Example
 The [`__main__.py`](https://github.com/faranalytics/data_science_project/blob/main/project/package/__main__.py) of the example package shows how you can use [papermill](https://papermill.readthedocs.io/en/latest/index.html) to easily run a Notebook pipeline.
 
 ## Publish
