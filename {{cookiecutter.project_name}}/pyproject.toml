@@ -8,7 +8,7 @@ dynamic = ["version"]
 authors = [
   { name="Example Author", email="author@example.com" },
 ]
-description = "A small example package"
+description = "{{cookiecutter.package_description}}"
 readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [
@@ -22,8 +22,8 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/pypa/sampleproject"
-Issues = "https://github.com/pypa/sampleproject/issues"
+Homepage = "{{cookiecutter.repository_url}}"
+Issues = "{{cookiecutter.repository_url}}/issues"
 
 [tool.hatch.version]
 path = "__about__.py"
