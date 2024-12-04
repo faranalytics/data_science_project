@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 name = "{{cookiecutter.package_name}}"
 dynamic = ["version"]
 authors = [
-  { name="Example Author", email="author@example.com" },
+  { name="{{cookiecutter.author_name}}", email="{{cookiecutter.author_email}}" },
 ]
 description = "{{cookiecutter.package_description}}"
 readme = "README.md"
