@@ -139,8 +139,12 @@ cookiecutter https://github.com/faranalytics/data_science_project.git --checkout
 
 ### Complete the Cookiecutter form.
 ```bash
-  [1/2] project_name (project): my_project_name
-  [2/2] package_name (package): my_package_name
+  [1/6] project_name (project): project
+  [2/6] package_name (package): package
+  [3/6] repository_url (https://github.com/pypa/sampleproject): https://github.com/pypa/sampleproject
+  [4/6] package_description (A small example package): A small example package
+  [5/6] author_name (Example Author): Example Author
+  [6/6] author_email (author@example.com): author@example.com
 ```
 You can give your project and package the same name.
 
