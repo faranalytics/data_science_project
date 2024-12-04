@@ -10,15 +10,15 @@ This repository describes an alternative approach using a conventional Python [f
 One important advantage of this approach is that utility functions can be conveniently imported into notebooks from anywhere in the package. It makes imports seamless without having to modify `sys.path` or setting the `PYTHONPATH` environment variable.
 
 ## Table of Contents
-- [Explore](#explore)
+- [Project Layout](#project-layout)
 - [Create a Data Science Project Using the Cookiecutter](#create-a-data-science-project-using-the-cookiecutter)
 - [Dependencies](#dependencies)
 - [Pipelines](#pipelines)
 - [Publish](#publish)
 
-## Explore
+## Project Layout
+You can clone this repository and follow this short tutorial in order to explore the project layout.  If you would like to start a new project you can [create a project using the Cookiecutter](#create-a-data-science-project-using-the-cookiecutter).
 
-You can clone this repository, explore, and modify it to meet your needs or [create a project using the Cookiecutter](#create-a-data-science-project-using-the-cookiecutter).
 ### Clone the repository.
 ```bash
 git clone https://github.com/faranalytics/data_science_project.git
@@ -31,6 +31,7 @@ cd data_science_project/project
 ```
 
 ### The directory structure looks like this.
+This is a conventional [flat-layout](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/) Python project.
 ```
 ├── project ⬅ This is the project directory.  Optionally chose a name for your project.
     ├── __about__.py
@@ -157,4 +158,4 @@ python -m <your-package-name>
 ```
 
 ## Publish
-You can publish your package by following the instructions in the [tutorial](https://packaging.python.org/en/latest/tutorials/packaging-projects/).  Alternatively, you can use the [Hatch](https://hatch.pypa.io/latest/) CLI tool.
+You can publish your package by following the instructions in the [tutorial](https://packaging.python.org/en/latest/tutorials/packaging-projects/).  Alternatively, you can use the [Hatch](https://hatch.pypa.io/latest/) CLI tool in order to build and deploy your project.
