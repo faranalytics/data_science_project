@@ -84,6 +84,7 @@ An editable install, also known as a development install, will make changes to y
 ```bash
 pip install -e .
 ```
+You have installed a Python package named `package`.  You can uninstall the package from your environment with `pip uninstall package`.
 
 ### Open the `package/methods/notebooks/main.ipynb` notebook and run the cells.
 
@@ -98,20 +99,32 @@ Import a utility function from the methods sub-package.
 ```python
 from package.methods.utils import say_hello
 
-say_hello()
+print(say_hello())
 ```
 
-Read data from the `MATERIALS_PATH`, transform it into a list of lists, and write the data to the `RESULTS_PATH`.
+Read data from the `MATERIALS_PATH`, transform it into a list of lists, and write the data to the `RESULTS_PATH` and print it to the Notebook output cell.
 ```python
 from pprint import pprint
 import pickle
+
+# Read `iris.data` from the MATERIALS_PATH.
 data = [
     line.strip().split(",")
     for line in open(MATERIALS_PATH.joinpath("iris/iris.data")).readlines()[:-1]
 ]
 
-pickle.dump(data, open(RESULTS_PATH.joinpath("data.pkl"), "wb"))
+# Write the `iris.data.pkl` table to RESULTS_PATH.
+pickle.dump(data, open(RESULTS_PATH.joinpath("iris.data.pkl"), "wb"))
+
+pprint(data)
 ```
+
+### Run the pipeline named `package`.
+The example project contains a pipeline defined in `__main__.py`.  You can run the pipeline by running the module.  It runs the contents of `/project/package/notebooks.ipynb` and prints the first 10 lines of the iris dataset to the console.
+```bash
+python -m package
+```
+
 ## Create a Data Science Project Using the Cookiecutter
 
 ### Install the Cookiecutter package.
