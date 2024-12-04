@@ -19,18 +19,18 @@ One important advantage of this approach is that utility functions can be conven
 ## Project Layout
 You can clone this repository and follow this short tutorial in order to explore the project layout.  If you want to start a new project, you can [create a project using the Cookiecutter](#create-a-data-science-project-using-the-cookiecutter).
 
-### Clone the repository.
+#### Clone the repository.
 ```bash
 git clone https://github.com/faranalytics/data_science_project.git
 ```
 
-### Change directory into the repository's project directory.
+#### Change directory into the repository's project directory.
 This is the top-level directory of a conventional Python package.
 ```bash
 cd data_science_project/project
 ```
 
-### The directory structure looks like this.
+#### The directory structure looks like this.
 This is a conventional [flat-layout](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/) Python project.  The project follows all the conventions of a formal Python project.
 ```
 ├── project ⬅ This is the project directory.  Optionally chose a name for your project.
@@ -74,12 +74,12 @@ This is a conventional [flat-layout](https://packaging.python.org/en/latest/disc
     └── README.md
 ```
 
-### Activate your environment if you are using a package manager (e.g., conda).
+#### Activate your environment if you are using a package manager (e.g., conda).
 ```bash
 conda activate <your-environment>
 ```
 
-### Install the package in editable mode.  
+#### Install the package in editable mode.  
 An editable install, also known as a development install, will make changes to your package modules immediately available when you restart your kernel.
 ```bash
 pip install -e .
@@ -89,7 +89,7 @@ You have installed a Python package named `package`.  Once you complete the tuto
 pip uninstall pacakge
 ```
 
-### Open the `package/methods/notebooks/main.ipynb` notebook and run the cells.
+#### Open the `package/methods/notebooks/main.ipynb` notebook and run the cells.
 
 Import the path of each sub-package.
 ```python
@@ -122,7 +122,7 @@ pickle.dump(data, open(RESULTS_PATH.joinpath("iris.data.pkl"), "wb"))
 pprint(data)
 ```
 
-### Run the pipeline module named `package`.
+#### Run the pipeline module named `package`.
 The example project contains a pipeline defined in `__main__.py`.  You can run the pipeline by running the module.  It uses the [papermill](https://papermill.readthedocs.io/en/latest/index.html) package to run the contents of `/project/package/methods/notebooks/main.ipynb`.  It prints the first 10 lines of the iris dataset to the console.
 ```bash
 python -m package
@@ -130,17 +130,17 @@ python -m package
 
 ## Create a Data Science Project Using the Cookiecutter
 
-### Install the Cookiecutter package.
+#### Install the Cookiecutter package.
 ```bash
 pip install cookiecutter
 ```
 
-### Use the Cookiecutter to create a Data Science Project from the cookiecutter branch.
+#### Use the Cookiecutter to create a Data Science Project from the cookiecutter branch.
 ```bash
 cookiecutter https://github.com/faranalytics/data_science_project.git --checkout cookiecutter
 ```
 
-### Complete the Cookiecutter form.
+#### Complete the Cookiecutter form.
 ```bash
   [1/6] project_name (project): project
   [2/6] package_name (package): package
@@ -151,18 +151,18 @@ cookiecutter https://github.com/faranalytics/data_science_project.git --checkout
 ```
 You can give your project and package the same name.
 
-### Change directory into the repository's project directory.
+#### Change directory into the repository's project directory.
 This is the top-level directory of a conventional Python package.
 ```bash
 cd <my_project_name>
 ```
 
-### Activate your environment if you are using a package manager (e.g., conda).
+#### Activate your environment if you are using a package manager (e.g., conda).
 ```bash
 conda activate <your-environment>
 ```
 
-### Install the package in editable mode.  
+#### Install the package in editable mode.  
 An editable install, also known as a development install, will make changes to your package modules immediately available when you restart your kernel.
 ```bash
 pip install -e .
@@ -171,7 +171,7 @@ pip install -e .
 ## Dependencies
 You can add dependencies to your project by modifying the `dependencies` section of the `pyproject.toml`.  
 
-### Include the Pandas package.
+#### Include the Pandas package.
 You can include the `pandas` package, for example, by adding it to the list of `dependencies`.
 
 `pyproject.toml`
