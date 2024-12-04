@@ -119,7 +119,7 @@ pickle.dump(data, open(RESULTS_PATH.joinpath("iris.data.pkl"), "wb"))
 pprint(data)
 ```
 
-### Run the pipeline named `package`.
+### Run the pipeline module named `package`.
 The example project contains a pipeline defined in `__main__.py`.  You can run the pipeline by running the module.  It runs the contents of `/project/package/notebooks.ipynb` and prints the first 10 lines of the iris dataset to the console.
 ```bash
 python -m package
