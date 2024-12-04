@@ -84,7 +84,10 @@ An editable install, also known as a development install, will make changes to y
 ```bash
 pip install -e .
 ```
-You have installed a Python package named `package`.  You can uninstall the package from your environment with `pip uninstall package`.
+You have installed a Python package named `package`.  Once you complete the tutorial, you can uninstall it using pip.
+```bash
+pip uninstall pacakge
+```
 
 ### Open the `package/methods/notebooks/main.ipynb` notebook and run the cells.
 
