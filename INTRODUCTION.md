@@ -120,7 +120,7 @@ pprint(data)
 ```
 
 ### Run the pipeline module named `package`.
-The example project contains a pipeline defined in `__main__.py`.  You can run the pipeline by running the module.  It runs the contents of `/project/package/notebooks.ipynb` and prints the first 10 lines of the iris dataset to the console.
+The example project contains a pipeline defined in `__main__.py`.  You can run the pipeline by running the module.  It runs the contents of `/project/package/methods/notebooks/main.ipynb` and prints the first 10 lines of the iris dataset to the console.
 ```bash
 python -m package
 ```
