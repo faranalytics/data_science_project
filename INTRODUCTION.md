@@ -43,7 +43,7 @@ This is a conventional [flat-layout](https://packaging.python.org/en/latest/disc
     |   |
     │   ├── __init__.py
     |   |
-    |   ├── __main__.py
+    |   ├── __main__.py ⬅ You can define your package's pipeline in the __main__.py module.
     |   |
     │   ├── materials ⬅ You can put your datasets and models in the materials directory.
     |   |   |
