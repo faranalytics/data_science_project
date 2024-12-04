@@ -188,6 +188,7 @@ You can use `__main__.py` in order to define your project's pipeline.  Once your
 ```bash
 python -m <your-package-name>
 ```
+The [`__main__.py`](https://github.com/faranalytics/data_science_project/blob/main/project/package/__main__.py) of the example package shows how you can use [papermill](https://papermill.readthedocs.io/en/latest/installation.html#installing-papermill) to easily run a Notebook pipeline.
 
 ## Publish
 You can publish your package by following the instructions in the [tutorial](https://packaging.python.org/en/latest/tutorials/packaging-projects/).  Alternatively, you can use the [Hatch](https://hatch.pypa.io/latest/) CLI tool in order to build and publish your project.
