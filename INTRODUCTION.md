@@ -175,7 +175,7 @@ pip install -e .
 ## Dependencies
 You can add dependencies to your project by modifying the `dependencies` section of the `pyproject.toml`.  
 
-### Instructions
+### Add a Package Dependency to Your Project
 
 #### Include the Pandas package.
 You can include the `pandas` package, for example, by adding it to the list of `dependencies`.
