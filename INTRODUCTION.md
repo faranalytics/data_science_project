@@ -19,6 +19,8 @@ One important advantage of this approach is that utility functions can be conven
 ## Project Layout
 You can clone this repository and follow this short tutorial in order to explore the project layout.  If you want to start a new project, you can [create a project using the Cookiecutter](#create-a-data-science-project-using-the-cookiecutter).
 
+## Instructions
+
 #### Clone the repository.
 ```bash
 git clone https://github.com/faranalytics/data_science_project.git
@@ -130,6 +132,8 @@ python -m package
 
 ## Create a Data Science Project Using the Cookiecutter
 
+### Instructions
+
 #### Install the Cookiecutter package.
 ```bash
 pip install cookiecutter
@@ -170,6 +174,8 @@ pip install -e .
 
 ## Dependencies
 You can add dependencies to your project by modifying the `dependencies` section of the `pyproject.toml`.  
+
+### Instructions
 
 #### Include the Pandas package.
 You can include the `pandas` package, for example, by adding it to the list of `dependencies`.
