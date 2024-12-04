@@ -203,7 +203,7 @@ python -m <your-package-name>
 ```
 
 ### Example
-The [`__main__.py`](https://github.com/faranalytics/data_science_project/blob/main/project/package/__main__.py) module in this repository shows how you can use [papermill](https://papermill.readthedocs.io/en/latest/index.html) to easily run a Notebook pipeline.
+The [`__main__.py`](https://github.com/faranalytics/data_science_project/blob/main/project/package/__main__.py) module in this repository shows how you can use [papermill](https://papermill.readthedocs.io/en/latest/index.html) to easily construct a Notebook pipeline.
 
 ## Publish
 You can publish your package by following the instructions in the [tutorial](https://packaging.python.org/en/latest/tutorials/packaging-projects/).  Alternatively, you can use the [Hatch](https://hatch.pypa.io/latest/) CLI tool in order to build and publish your project.
