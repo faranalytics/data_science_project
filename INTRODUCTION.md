@@ -142,7 +142,7 @@ pprint(data)
 ```
 
 #### Run the pipeline module named `package`.
-The example project contains a pipeline defined in `__main__.py`.  You can run the pipeline by running the module.  It uses the [papermill](https://papermill.readthedocs.io/en/latest/index.html) package to run the contents of `/project/package/methods/notebooks/main.ipynb`.  It prints the first 10 lines of the iris dataset to the console.
+The example project contains a pipeline defined in `__main__.py`.  You can run the pipeline by running the installed `package` module.  It uses the [papermill](https://papermill.readthedocs.io/en/latest/index.html) package to run the contents of `/project/package/methods/notebooks/main.ipynb`.  It prints the first 10 lines of the iris dataset to the console.
 ```bash
 python -m package
 ```
