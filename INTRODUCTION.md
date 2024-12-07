@@ -100,14 +100,14 @@ pip uninstall pacakge
 
 #### Open the `package/methods/notebooks/main.ipynb` notebook and run the cells.
 
-Import the path of each sub-package.
+##### Import the path of each sub-package.
 ```python
 from package.materials import MATERIALS_PATH
 from package.methods import METHODS_PATH
 from package.results import RESULTS_PATH
 ```
 
-Set the `__package__` attribute and use a relative import to import a utility function from the `methods` sub-package.
+##### Set the `__package__` attribute and use a relative import to import a utility function from the `methods` sub-package.
 ```python
 __package__ = "package.methods.notebooks"
 
@@ -116,14 +116,14 @@ from ..utils import say_hello
 print(say_hello())
 ```
 
-Import a utility function from the `methods` sub-package.
+##### Import a utility function from the `methods` sub-package.
 ```python
 from package.methods.utils import say_hello
 
 print(say_hello())
 ```
 
-Read data from the `MATERIALS_PATH`, transform it into a list of lists, and write the data to the `RESULTS_PATH` and print it to the notebook output cell.
+##### Read data from the `MATERIALS_PATH`, transform it into a list of lists, and write the data to the `RESULTS_PATH` and print it to the notebook output cell.
 ```python
 from pprint import pprint
 import pickle
