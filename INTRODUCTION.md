@@ -20,6 +20,7 @@ One important advantage of this approach is that utility functions can be conven
 You can clone this repository and follow this short tutorial in order to explore the project layout.  If you want to start a new project, you can [create a project using the Cookiecutter](#create-a-data-science-project-using-the-cookiecutter).
 
 ### Instructions
+In this example you will clone the repository, install it, and run an example notebook.
 
 #### Clone the repository.
 ```bash
@@ -98,6 +99,15 @@ Import the path of each sub-package.
 from package.materials import MATERIALS_PATH
 from package.methods import METHODS_PATH
 from package.results import RESULTS_PATH
+```
+
+Set the `__package__` attribute and use a relative import to import a utility function from the methods sub-package.
+```python
+__package__ = "package.methods.notebooks"
+
+from ..utils import say_hello
+
+print(say_hello())
 ```
 
 Import a utility function from the methods sub-package.
