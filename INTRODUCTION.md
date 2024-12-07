@@ -101,7 +101,7 @@ from package.methods import METHODS_PATH
 from package.results import RESULTS_PATH
 ```
 
-Set the `__package__` attribute and use a relative import to import a utility function from the methods sub-package.
+Set the `__package__` attribute and use a relative import to import a utility function from the `methods` sub-package.
 ```python
 __package__ = "package.methods.notebooks"
 
@@ -110,14 +110,14 @@ from ..utils import say_hello
 print(say_hello())
 ```
 
-Import a utility function from the methods sub-package.
+Import a utility function from the `methods` sub-package.
 ```python
 from package.methods.utils import say_hello
 
 print(say_hello())
 ```
 
-Read data from the `MATERIALS_PATH`, transform it into a list of lists, and write the data to the `RESULTS_PATH` and print it to the Notebook output cell.
+Read data from the `MATERIALS_PATH`, transform it into a list of lists, and write the data to the `RESULTS_PATH` and print it to the notebook output cell.
 ```python
 from pprint import pprint
 import pickle
@@ -213,7 +213,7 @@ python -m <your-package-name>
 ```
 
 ### Example
-The [`__main__.py`](https://github.com/faranalytics/data_science_project/blob/main/project/package/__main__.py) module in this repository shows how you can use [papermill](https://papermill.readthedocs.io/en/latest/index.html) to easily construct a Notebook pipeline.
+The [`__main__.py`](https://github.com/faranalytics/data_science_project/blob/main/project/package/__main__.py) module in this repository shows how you can use [papermill](https://papermill.readthedocs.io/en/latest/index.html) to easily construct a notebook pipeline.
 
 ## Publish
 You can publish your package by following the instructions in the [tutorial](https://packaging.python.org/en/latest/tutorials/packaging-projects/).  Alternatively, you can use the [Hatch](https://hatch.pypa.io/latest/) CLI tool in order to build and publish your project.
