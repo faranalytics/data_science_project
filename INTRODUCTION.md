@@ -20,7 +20,7 @@ One important advantage of this approach is that utility functions can be conven
 You can clone this repository and follow this short tutorial in order to explore the project layout.  If you want to start a new project, you can [create a project using the Cookiecutter](#create-a-data-science-project-using-the-cookiecutter).
 
 ### Instructions
-In this example you will clone the repository, install it, and run an example notebook.
+In this example you will clone the repository, explore its layout, install it, and run an example notebook.
 
 #### Clone the repository.
 ```bash
