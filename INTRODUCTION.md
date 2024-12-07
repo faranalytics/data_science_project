@@ -11,6 +11,7 @@ One important advantage of this approach is that utility functions can be conven
 
 ### Features
 - An easily recognizable formal Python package layout
+- Define your dependencies using formal packing conventions
 - Seamless imports from anywhere in your package
 - Relative package imports from within notebooks
 - Pipeline definitions
