@@ -9,14 +9,20 @@ This repository describes an alternative approach using a conventional Python [f
 
 One important advantage of this approach is that utility functions can be conveniently imported into notebooks from anywhere in the package. It makes imports seamless without having to modify `sys.path` or setting the `PYTHONPATH` environment variable.
 
-## Table of Contents
-- [Project Layout](#project-layout)
-- [Create a Data Science Project Using the Cookiecutter](#create-a-data-science-project-using-the-cookiecutter)
-- [Dependencies](#dependencies)
-- [Pipelines](#pipelines)
-- [Publish](#publish)
+### Features
+- An easily recognizable formal Python package layout
+- Seamless imports from anywhere in your package
+- Relative package imports from notebooks
+- Pipeline definitions
 
-## Project Layout
+## Table of Contents
+1. [Explore the Project Layout](#explore-the-project-layout)
+2. [Create a Data Science Project Using the Cookiecutter](#create-a-data-science-project-using-the-cookiecutter)
+3. [Dependencies](#dependencies)
+4. [Pipelines](#pipelines)
+5. [Publish](#publish)
+
+## Explore the Project Layout
 You can clone this repository and follow this short tutorial in order to explore the project layout.  If you want to start a new project, you can [create a project using the Cookiecutter](#create-a-data-science-project-using-the-cookiecutter).
 
 ### Instructions
