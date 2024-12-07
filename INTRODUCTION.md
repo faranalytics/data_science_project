@@ -144,6 +144,8 @@ python -m package
 
 ### Instructions
 
+You can use the Cookiecutter package to create a customized instance of The Data Science Project.
+
 #### Install the Cookiecutter package.
 ```bash
 pip install cookiecutter
