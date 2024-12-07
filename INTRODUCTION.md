@@ -12,7 +12,7 @@ One important advantage of this approach is that utility functions can be conven
 ### Features
 - An easily recognizable formal Python package layout
 - Seamless imports from anywhere in your package
-- Relative package imports from notebooks
+- Relative package imports from within notebooks
 - Pipeline definitions
 
 ## Table of Contents
