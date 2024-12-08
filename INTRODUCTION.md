@@ -19,9 +19,9 @@ One important advantage of this approach is that utility functions can be conven
 ## Table of Contents
 1. [Explore the Project Layout](#explore-the-project-layout)
 2. [Create a Data Science Project Using the Cookiecutter](#create-a-data-science-project-using-the-cookiecutter)
-3. [Dependencies](#dependencies)
-4. [Pipelines](#pipelines)
-5. [Publish](#publish)
+3. [Specify Dependencies](#specify-dependencies)
+4. [Create a Pipeline](#create-a-pipeline)
+5. [Publish Your Package](#publish-your-package)
 
 ## Explore the Project Layout
 You can clone this repository and follow this short tutorial in order to explore the project layout.  If you want to start a new project, you can [create a project using the Cookiecutter](#create-a-data-science-project-using-the-cookiecutter).
@@ -191,7 +191,7 @@ An editable install, also known as a development install, will make changes to y
 pip install -e .
 ```
 
-## Dependencies
+## Specify Dependencies
 You can add dependencies to your project by modifying the `dependencies` section of the `pyproject.toml`.  
 
 ### Add a Package Dependency to Your Project
@@ -215,7 +215,7 @@ dependencies = [
 pip install -e .
 ```
 
-## Pipelines
+## Create a Pipeline
 You can use `__main__.py` in order to define your project's pipeline.  Once your package is installed and your pipeline is defined in your `__main__.py` module, you can run your package's pipeline using the `-m` option.
 ```bash
 python -m <your-package-name>
@@ -224,5 +224,5 @@ python -m <your-package-name>
 ### Example
 The [`__main__.py`](https://github.com/faranalytics/data_science_project/blob/main/project/package/__main__.py) module in this repository shows how you can use [papermill](https://papermill.readthedocs.io/en/latest/index.html) to easily construct a notebook pipeline.
 
-## Publish
+## Publish Your Package
 You can publish your package by following the instructions in the [tutorial](https://packaging.python.org/en/latest/tutorials/packaging-projects/).  Alternatively, you can use the [Hatch](https://hatch.pypa.io/latest/) CLI tool in order to build and publish your project.
