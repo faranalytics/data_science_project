@@ -16,12 +16,27 @@ In the data science domain projects are sometimes shared as an informal assembla
 
 ## The Informal Layout
 
-The Informal Layout isn't installable; however, it's [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like organization makes 
+The Informal Layout isn't installable; however, it's [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like layout makes its organization immediately recognizable to persons working in the science domains.
 
 ### Features
 - A simple [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like layout.
+- You don't need to install the project.
 
+### Explore the Project Layout
 
+You can clone this repository in order to explore the project layout.  If you want to start a new project, you can [create a project using the Cookiecutter](#create-a-data-science-project-using-the-cookiecutter).
+
+#### The directory structure looks like this.
+
+├── project ⬅ This is the project directory.  Optionally chose a name for your project.
+    ├── materials ⬅ You can put your datasets and models in the materials directory.
+    │   └── README.md
+    ├── methods ⬅ You can put your utility functions and notebooks in the methods directory.
+    │   ├── main.ipynb
+    │   └── README.md
+    ├── README.md
+    └── results ⬅ You can put the outputs of your scripts (e.g., tables and visualizations) in the results directory.
+        └── README.md
 
 
 ## The Formal Flat Layout
