@@ -1,24 +1,26 @@
 # The Data Science Project
 
-[IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like Python project templates for data science projects.
+The [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like Python project templates for data science projects.
 
 ## Introduction
 
-In the data science domain projects are sometimes shared as an informal assemblage of scripts. This repository proposes two [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like layouts that can be used for organizing a data science project.  The ["Informal IMRaD-like Layout"](#an-informal-imrad-like-layout) is nothing more than a Python project organized into `materials`, `methods`, and `results` directories.  The ["Formal IMRaD Flat Layout"](#a-formal-imrad-like-flat-layout) is a conventional installable Python [flat-layout](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/) project that can be built and distributed and even published to PyPI.
+In the data science domain projects are sometimes shared as an informal assemblage of scripts. This repository proposes two [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like layouts that can be used for organizing a data science project.  The "[Informal IMRaD-like Layout](#an-informal-imrad-like-layout)" is a Python project organized into `materials`, `methods`, and `results` directories.  The "[Formal IMRaD Flat Layout"](#a-formal-imrad-like-flat-layout)" is a conventional installable Python [flat-layout](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/) project that can be built and distributed as a package and published to PyPI.
 
 ## Table of Contents
 
 - [An Informal IMRaD-like Layout](#an-informal-imrad-like-layout)
-- [A Formal IMRaD-like Flat Layout](#a-formal-imrad-like-flat-layout)
   - [Explore the Project Layout](#explore-the-project-layout)
-  - [Create a Data Science Project Using the Cookiecutter](#create-a-data-science-project-using-the-cookiecutter)
+  - [Create an Informal IMRaD-like Layout Data Science Project Using the Cookiecutter](#create-an-informal-imrad-like-layout-data-science-project-using-the-cookiecutter)
+- [A Formal IMRaD-like Flat Layout](#a-formal-imrad-like-flat-layout)
+  - [Explore the Project Layout](#explore-the-project-layout-1)
+  - [Create a Formal IMRaD-like Flat Layout Data Science Project Using the Cookiecutter](#create-a-formal-imrad-like-flat-layout-data-science-project-using-the-cookiecutter)
   - [Specify Dependencies](#specify-dependencies)
   - [Create a Pipeline](#create-a-pipeline)
   - [Publish Your Package](#publish-your-package)
 
 ## An Informal IMRaD-like Layout
 
-The Informal Layout is a useful and intuitive project layout.  It serves as an introduction to the [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like layout for data science projects.  It isn't installable; however, its [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like naming convention makes its organization immediately recognizable to persons working in the science domains.
+The Informal [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like Layout is a useful and intuitive project layout.  It also serves as an introduction to the [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like layout for data science projects.  It isn't installable; however, its [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like naming convention makes its organization immediately recognizable to persons working in the science domains.
 
 ### Features
 
@@ -30,6 +32,7 @@ You can [create an informal layout project using the Cookiecutter](#create-a-dat
 
 #### The directory structure looks like this.
 
+```
 ├── project ⬅ This is the project directory.  Optionally chose a name for your project.
     │
     ├── materials ⬅ You can put your datasets and models in the materials directory.
@@ -45,11 +48,12 @@ You can [create an informal layout project using the Cookiecutter](#create-a-dat
     │   │
     │   └── README.md
     │
-    ├── README.md
+    ├── README.md ⬅ You can put your Introduction and Discussion in the README.md file.
     │
     └── .gitignore
+```
 
-### Create a Data Science Project Using the Cookiecutter.
+### Create an Informal IMRaD-like Layout Data Science Project Using the Cookiecutter
 
 #### Install the Cookiecutter package.
 
@@ -65,7 +69,7 @@ cookiecutter https://github.com/faranalytics/data_science_project.git --checkout
 
 ## A Formal IMRaD-like Flat Layout
 
-The Formal IMRaD-like Flat layout describes an approach using a conventional Python [flat-layout](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/) project. It follows formal conventions for packaging a Python project. You install it into your environment just like an ordinary Python package. It consists of a single package with an [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like layout; it contains materials, methods, and results sub-packages. Project dependencies are specified in the `pyproject.toml` file.
+The Formal [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like Flat Layout describes an approach using a conventional Python [flat-layout](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/) project. It follows formal conventions for packaging a Python project. You install it into your environment just like an ordinary Python package. It consists of a single package with an [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like layout; it contains `materials`, `methods`, and `results` sub-packages. Project dependencies are specified in the `pyproject.toml` file.
 
 One important advantage of this approach is that utility functions can be conveniently imported into notebooks from anywhere in the package. It makes imports seamless without having to modify `sys.path` or setting the `PYTHONPATH` environment variable.
 
@@ -101,6 +105,7 @@ cd data_science_project/project
 #### The directory structure looks like this.
 
 This is a conventional [flat-layout](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/) Python project.  The project follows all the conventions of a formal Python project.
+
 ```
 ├── project ⬅ This is the project directory.  Optionally chose a name for your project.
     |
@@ -213,7 +218,7 @@ The example project contains a pipeline defined in `__main__.py`.  You can run t
 python -m package
 ```
 
-### Create a Data Science Project Using the Cookiecutter
+### Create a Formal IMRaD-like Flat Layout Data Science Project Using the Cookiecutter
 
 You can use the Cookiecutter package to create a customized instance of The Data Science Project.
 
