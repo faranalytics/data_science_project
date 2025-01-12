@@ -70,7 +70,7 @@ cookiecutter https://github.com/faranalytics/data_science_project.git --checkout
 
 ## A Formal IMRaD-like Flat Layout
 
-The Formal [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like Flat Layout describes an approach for organizing your data science project using a conventional Python [flat-layout](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/) project. It follows formal conventions for packaging a Python project. You install it into your environment just like an ordinary Python package. It consists of a single package with an IMRaD-like layout; it contains `materials`, `methods`, and `results` sub-packages. Project dependencies are specified in the `pyproject.toml` file.
+The Formal [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like Flat Layout project template describes an approach for organizing your data science project using a conventional Python "[flat-layout](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/)" project layout. It follows formal conventions for packaging a Python project. You install it into your environment just like an ordinary Python package. It consists of a single package with an IMRaD-like layout; it contains `materials`, `methods`, and `results` sub-packages. Project dependencies are specified in the `pyproject.toml` file.
 
 One important advantage of this approach is that utility functions can be conveniently imported into notebooks from anywhere in the package. It makes imports seamless without having to modify `sys.path` or setting the `PYTHONPATH` environment variable.
 
