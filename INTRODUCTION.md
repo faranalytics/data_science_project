@@ -28,7 +28,7 @@ The Informal [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like Layout is a usefu
 
 ### Explore the Project Layout
 
-You can [create an informal layout project using the Cookiecutter](#create-a-data-science-project-using-the-cookiecutter).
+You can [create an informal layout project using the Cookiecutter](#create-an-informal-imrad-like-layout-data-science-project-using-the-cookiecutter).
 
 #### The directory structure looks like this.
 
@@ -83,7 +83,7 @@ One important advantage of this approach is that utility functions can be conven
 
 ## Explore the Project Layout
 
-You can clone this repository and follow this short tutorial in order to explore the project layout.  If you want to start a new project, you can [create a project using the Cookiecutter](#create-a-data-science-project-using-the-cookiecutter).
+You can clone this repository and follow this short tutorial in order to explore the project layout.  If you want to start a new project, you can [create a project using the Cookiecutter](#create-a-formal-imrad-like-flat-layout-data-science-project-using-the-cookiecutter).
 
 ### Instructions
 
