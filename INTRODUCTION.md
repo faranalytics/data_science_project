@@ -1,4 +1,5 @@
 # The Data Science Project
+
 A Python [flat-layout](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/) project template for data science projects.
 
 ## Introduction
@@ -6,21 +7,22 @@ A Python [flat-layout](https://packaging.python.org/en/latest/discussions/src-la
 In the data science domain projects are sometimes shared as an informal assemblage of scripts. This repository describes two [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like layouts that can be used for organizing a data science project.
 
 ## Table of Contents
-- [The Informal Layout](#the-informal-layout)
-- [The Formal Flat Layout](#the-formal-flat-layout)
+
+- [An Informal IMRaD Layout](#an-informal-imrad-like-layout)
+- [A Formal IMRaD Flat Layout](#the-formal-flat-layout)
   - [Explore the Project Layout](#explore-the-project-layout)
   - [Create a Data Science Project Using the Cookiecutter](#create-a-data-science-project-using-the-cookiecutter)
   - [Specify Dependencies](#specify-dependencies)
   - [Create a Pipeline](#create-a-pipeline)
   - [Publish Your Package](#publish-your-package)
 
-## The Informal Layout
+## An Informal IMRaD-like Layout
 
-The Informal Layout isn't installable; however, its [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like layout makes its organization immediately recognizable to persons working in the science domains.
+The Informal Layout isn't installable; however, its [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like naming convention makes its organization immediately recognizable to persons working in the science domains.
 
 ### Features
+
 - A simple [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like layout.
-- You don't need to install the project.
 
 ### Explore the Project Layout
 
@@ -29,52 +31,67 @@ You can clone this repository in order to explore the project layout.  If you wa
 #### The directory structure looks like this.
 
 ├── project ⬅ This is the project directory.  Optionally chose a name for your project.
+    │
     ├── materials ⬅ You can put your datasets and models in the materials directory.
+    │   │
     │   └── README.md
+    │
     ├── methods ⬅ You can put your utility functions and notebooks in the methods directory.
     │   ├── main.ipynb
+    │   │
     │   └── README.md
+    │
+    ├── results ⬅ You can put the outputs of your scripts (e.g., tables and visualizations) in the results directory.
+    │   │
+    │   └── README.md
+    │
     ├── README.md
-    └── results ⬅ You can put the outputs of your scripts (e.g., tables and visualizations) in the results directory.
-        └── README.md
+    │
+    └── .gitignore
 
 ## Create a data science project using the Cookiecutter.
 
-## The Formal Flat Layout
+```bash
+cookiecutter https://github.com/faranalytics/data_science_project.git --checkout informal_layout_cookiecutter
+```
 
-A `requirements.txt` file is oftentimes used in order to reconstruct the project's environment. Some solutions involve making changes to `sys.path` or setting the `PYTHONPATH` environment variable in order to facilitate imports.
+## A Formal IMRaD-like Flat Layout
 
-This repository describes an alternative approach using a conventional Python [flat-layout](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/) project. It follows formal conventions for packaging a Python project. You install it into your environment just like an ordinary Python package. It consists of a single package with an [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like layout; it contains materials, methods, and results sub-packages. Project dependencies are specified in the `pyproject.toml` file.
+The Formal IMRaD-like Flat layout describes an approach using a conventional Python [flat-layout](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/) project. It follows formal conventions for packaging a Python project. You install it into your environment just like an ordinary Python package. It consists of a single package with an [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like layout; it contains materials, methods, and results sub-packages. Project dependencies are specified in the `pyproject.toml` file.
 
 One important advantage of this approach is that utility functions can be conveniently imported into notebooks from anywhere in the package. It makes imports seamless without having to modify `sys.path` or setting the `PYTHONPATH` environment variable.
 
 ### Features
+
 - An easily recognizable formal Python package layout
 - Define your dependencies using formal packing conventions
 - Seamless imports from anywhere in your package
 - Relative package imports from within notebooks
 - Pipeline definitions
 
-
-
 ## Explore the Project Layout
+
 You can clone this repository and follow this short tutorial in order to explore the project layout.  If you want to start a new project, you can [create a project using the Cookiecutter](#create-a-data-science-project-using-the-cookiecutter).
 
 ### Instructions
+
 In this example you will clone the repository, explore its layout, install it, and run an example notebook.
 
 #### Clone the repository.
+
 ```bash
 git clone https://github.com/faranalytics/data_science_project.git
 ```
 
 #### Change directory into the repository's project directory.
+
 This is the top-level directory of a conventional Python package.
 ```bash
 cd data_science_project/project
 ```
 
 #### The directory structure looks like this.
+
 This is a conventional [flat-layout](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/) Python project.  The project follows all the conventions of a formal Python project.
 ```
 ├── project ⬅ This is the project directory.  Optionally chose a name for your project.
@@ -119,11 +136,13 @@ This is a conventional [flat-layout](https://packaging.python.org/en/latest/disc
 ```
 
 #### Activate your environment if you are using a package manager (e.g., conda).
+
 ```bash
 conda activate <your-environment>
 ```
 
 #### Install the package in editable mode.  
+
 An editable install, also known as a development install, will make changes to your package modules immediately available when you restart your kernel.
 ```bash
 pip install -e .
@@ -136,6 +155,7 @@ pip uninstall package
 #### Open the `package/methods/notebooks/main.ipynb` notebook and run the cells.
 
 ##### Import the path of each sub-package.
+
 ```python
 from package.materials import MATERIALS_PATH
 from package.methods import METHODS_PATH
@@ -143,6 +163,7 @@ from package.results import RESULTS_PATH
 ```
 
 ##### Set the `__package__` attribute and use a relative import to import a utility function from the `methods` sub-package.
+
 ```python
 __package__ = "package.methods.notebooks"
 
@@ -152,6 +173,7 @@ print(say_hello())
 ```
 
 ##### Import a utility function from the `methods` sub-package.
+
 ```python
 from package.methods.utils import say_hello
 
@@ -159,6 +181,7 @@ print(say_hello())
 ```
 
 ##### Read data from the `MATERIALS_PATH`, transform it into a list of lists, and write the data to the `RESULTS_PATH` and print it to the notebook output cell.
+
 ```python
 from pprint import pprint
 import pickle
@@ -176,6 +199,7 @@ pprint(data)
 ```
 
 #### Run the pipeline module named `package`.
+
 The example project contains a pipeline defined in `__main__.py`.  You can run the pipeline by running the installed `package` module.  It uses the [papermill](https://papermill.readthedocs.io/en/latest/index.html) package to run the contents of `/project/package/methods/notebooks/main.ipynb`.  It prints the first 10 lines of the iris dataset to the console.
 ```bash
 python -m package
@@ -188,16 +212,19 @@ python -m package
 You can use the Cookiecutter package to create a customized instance of The Data Science Project.
 
 #### Install the Cookiecutter package.
+
 ```bash
 pip install cookiecutter
 ```
 
 #### Use the Cookiecutter to create a Data Science Project from the cookiecutter branch.
+
 ```bash
 cookiecutter https://github.com/faranalytics/data_science_project.git --checkout cookiecutter
 ```
 
 #### Complete the Cookiecutter form.
+
 ```bash
   [1/6] project_name (project): project
   [2/6] package_name (package): package
@@ -209,28 +236,33 @@ cookiecutter https://github.com/faranalytics/data_science_project.git --checkout
 You can give your project and package the same name.
 
 #### Change directory into the repository's project directory.
+
 This is the top-level directory of a conventional Python package.
 ```bash
 cd <my_project_name>
 ```
 
 #### Activate your environment if you are using a package manager (e.g., conda).
+
 ```bash
 conda activate <your-environment>
 ```
 
 #### Install the package in editable mode.  
+
 An editable install, also known as a development install, will make changes to your package modules immediately available when you restart your kernel.
 ```bash
 pip install -e .
 ```
 
 ## Specify Dependencies
+
 You can add dependencies to your project by modifying the `dependencies` section of the `pyproject.toml`.  
 
 ### Add a Package Dependency to Your Project
 
 #### Include the Pandas package.
+
 You can include the `pandas` package, for example, by adding it to the list of `dependencies`.
 
 `pyproject.toml`
@@ -245,18 +277,22 @@ dependencies = [
 ```
 
 #### Reinstall your environment after specifying a new dependency.
+
 ```bash
 pip install -e .
 ```
 
 ## Create a Pipeline
+
 You can use `__main__.py` in order to define your project's pipeline.  Once your package is installed and your pipeline is defined in your `__main__.py` module, you can run your package's pipeline using the `-m` option.
 ```bash
 python -m <your-package-name>
 ```
 
 ### Example
+
 The [`__main__.py`](https://github.com/faranalytics/data_science_project/blob/main/project/package/__main__.py) module in this repository shows how you can use [papermill](https://papermill.readthedocs.io/en/latest/index.html) to easily construct a notebook pipeline.
 
 ## Publish Your Package
+
 You can publish your package by following the instructions in the [tutorial](https://packaging.python.org/en/latest/tutorials/packaging-projects/).  Alternatively, you can use the [Hatch](https://hatch.pypa.io/latest/) CLI tool in order to build and publish your project.
