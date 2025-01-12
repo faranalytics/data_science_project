@@ -20,7 +20,7 @@ In the data science domain projects are sometimes shared as an informal assembla
 
 ## An Informal IMRaD-like Layout
 
-The Informal [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like Layout is a useful and intuitive project layout.  It also serves as an introduction to the [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like layouts for data science projects.  It isn't installable; however, its [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like naming convention makes its organization immediately recognizable to persons working in the science domains.
+The Informal [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like Layout is a useful and intuitive project layout.  It also serves as an introduction to the IMRaD-like layouts for data science projects.  It isn't installable; however, its IMRaD-like naming convention makes its organization immediately recognizable to persons working in the science domains.
 
 ### Features
 
@@ -70,7 +70,7 @@ cookiecutter https://github.com/faranalytics/data_science_project.git --checkout
 
 ## A Formal IMRaD-like Flat Layout
 
-The Formal [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like Flat Layout describes an approach for organizing your data science project using a conventional Python [flat-layout](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/) project. It follows formal conventions for packaging a Python project. You install it into your environment just like an ordinary Python package. It consists of a single package with an [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like layout; it contains `materials`, `methods`, and `results` sub-packages. Project dependencies are specified in the `pyproject.toml` file.
+The Formal [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like Flat Layout describes an approach for organizing your data science project using a conventional Python [flat-layout](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/) project. It follows formal conventions for packaging a Python project. You install it into your environment just like an ordinary Python package. It consists of a single package with an IMRaD-like layout; it contains `materials`, `methods`, and `results` sub-packages. Project dependencies are specified in the `pyproject.toml` file.
 
 One important advantage of this approach is that utility functions can be conveniently imported into notebooks from anywhere in the package. It makes imports seamless without having to modify `sys.path` or setting the `PYTHONPATH` environment variable.
 
