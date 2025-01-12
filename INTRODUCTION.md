@@ -3,7 +3,30 @@ A Python [flat-layout](https://packaging.python.org/en/latest/discussions/src-la
 
 ## Introduction
 
-In the data science domain projects are sometimes shared as an informal assemblage of scripts. A `requirements.txt` file is oftentimes used in order to reconstruct the project's environment. Some solutions involve making changes to `sys.path` or setting the `PYTHONPATH` environment variable in order to facilitate imports.
+In the data science domain projects are sometimes shared as an informal assemblage of scripts. This repository describes two [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like layouts that can be used for organizing a data science project.
+
+## Table of Contents
+- [The Informal Layout](#the-informal-layout)
+- [The Formal Flat Layout](#the-formal-flat-layout)
+  - [Explore the Project Layout](#explore-the-project-layout)
+  - [Create a Data Science Project Using the Cookiecutter](#create-a-data-science-project-using-the-cookiecutter)
+  - [Specify Dependencies](#specify-dependencies)
+  - [Create a Pipeline](#create-a-pipeline)
+  - [Publish Your Package](#publish-your-package)
+
+## The Informal Layout
+
+The Informal Layout isn't installable; however, it's [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like organization makes 
+
+### Features
+- A simple [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like layout.
+
+
+
+
+## The Formal Flat Layout
+
+A `requirements.txt` file is oftentimes used in order to reconstruct the project's environment. Some solutions involve making changes to `sys.path` or setting the `PYTHONPATH` environment variable in order to facilitate imports.
 
 This repository describes an alternative approach using a conventional Python [flat-layout](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/) project. It follows formal conventions for packaging a Python project. You install it into your environment just like an ordinary Python package. It consists of a single package with an [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like layout; it contains materials, methods, and results sub-packages. Project dependencies are specified in the `pyproject.toml` file.
 
@@ -16,12 +39,7 @@ One important advantage of this approach is that utility functions can be conven
 - Relative package imports from within notebooks
 - Pipeline definitions
 
-## Table of Contents
-1. [Explore the Project Layout](#explore-the-project-layout)
-2. [Create a Data Science Project Using the Cookiecutter](#create-a-data-science-project-using-the-cookiecutter)
-3. [Specify Dependencies](#specify-dependencies)
-4. [Create a Pipeline](#create-a-pipeline)
-5. [Publish Your Package](#publish-your-package)
+
 
 ## Explore the Project Layout
 You can clone this repository and follow this short tutorial in order to explore the project layout.  If you want to start a new project, you can [create a project using the Cookiecutter](#create-a-data-science-project-using-the-cookiecutter).
