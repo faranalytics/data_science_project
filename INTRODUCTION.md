@@ -96,7 +96,7 @@ pip install -e .
 ```
 You have installed a Python package named `package`.  Once you complete the tutorial, you can uninstall it using pip.
 ```bash
-pip uninstall pacakge
+pip uninstall package
 ```
 
 #### Open the `package/methods/notebooks/main.ipynb` notebook and run the cells.
