@@ -1,15 +1,15 @@
 # The Data Science Project
 
-A Python [flat-layout](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/) project template for data science projects.
+[IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like Python project templates for data science projects.
 
 ## Introduction
 
-In the data science domain projects are sometimes shared as an informal assemblage of scripts. This repository describes two [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like layouts that can be used for organizing a data science project.
+In the data science domain projects are sometimes shared as an informal assemblage of scripts. This repository proposes two [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like layouts that can be used for organizing a data science project.  The ["Informal IMRaD-like Layout"](#an-informal-imrad-like-layout) is nothing more than a Python project organized into `materials`, `methods`, and `results` directories.  The ["Formal IMRaD Flat Layout"](#a-formal-imrad-like-flat-layout) is a conventional installable Python [flat-layout](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/) project that can be built and distributed and even published to PyPI.
 
 ## Table of Contents
 
-- [An Informal IMRaD Layout](#an-informal-imrad-like-layout)
-- [A Formal IMRaD Flat Layout](#the-formal-flat-layout)
+- [An Informal IMRaD-like Layout](#an-informal-imrad-like-layout)
+- [A Formal IMRaD-like Flat Layout](#a-formal-imrad-like-flat-layout)
   - [Explore the Project Layout](#explore-the-project-layout)
   - [Create a Data Science Project Using the Cookiecutter](#create-a-data-science-project-using-the-cookiecutter)
   - [Specify Dependencies](#specify-dependencies)
@@ -18,7 +18,7 @@ In the data science domain projects are sometimes shared as an informal assembla
 
 ## An Informal IMRaD-like Layout
 
-The Informal Layout isn't installable; however, its [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like naming convention makes its organization immediately recognizable to persons working in the science domains.
+The Informal Layout is an intuitive project layout and an introduction to the [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like layout for data science projects.  It isn't installable; however, its [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like naming convention makes its organization immediately recognizable to persons working in the science domains.
 
 ### Features
 
@@ -49,7 +49,7 @@ You can clone this repository in order to explore the project layout.  If you wa
     │
     └── .gitignore
 
-## Create a data science project using the Cookiecutter.
+### Create a Data Science Project Using the Cookiecutter.
 
 ```bash
 cookiecutter https://github.com/faranalytics/data_science_project.git --checkout informal_layout_cookiecutter
