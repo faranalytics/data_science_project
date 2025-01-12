@@ -49,6 +49,8 @@ You can [create an informal layout project using the Cookiecutter](#create-an-in
     │   │
     │   └── README.md
     │
+    ├── requirements.txt ⬅ You can specify your project requirements in this file.
+    │
     ├── README.md ⬅ You can put your Introduction and Discussion in the README.md file.
     │
     └── .gitignore
