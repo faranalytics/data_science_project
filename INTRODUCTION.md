@@ -18,7 +18,7 @@ In the data science domain projects are sometimes shared as an informal assembla
 
 ## An Informal IMRaD-like Layout
 
-The Informal Layout is an intuitive project layout and an introduction to the [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like layout for data science projects.  It isn't installable; however, its [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like naming convention makes its organization immediately recognizable to persons working in the science domains.
+The Informal Layout is a useful and intuitive project layout.  It serves as an introduction to the [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like layout for data science projects.  It isn't installable; however, its [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like naming convention makes its organization immediately recognizable to persons working in the science domains.
 
 ### Features
 
@@ -26,7 +26,7 @@ The Informal Layout is an intuitive project layout and an introduction to the [I
 
 ### Explore the Project Layout
 
-You can clone this repository in order to explore the project layout.  If you want to start a new project, you can [create an informal layout project using the Cookiecutter](#create-a-data-science-project-using-the-cookiecutter).
+You can [create an informal layout project using the Cookiecutter](#create-a-data-science-project-using-the-cookiecutter).
 
 #### The directory structure looks like this.
 
@@ -50,6 +50,14 @@ You can clone this repository in order to explore the project layout.  If you wa
     └── .gitignore
 
 ### Create a Data Science Project Using the Cookiecutter.
+
+#### Install the Cookiecutter package.
+
+```bash
+pip install cookiecutter
+```
+
+#### Use the Cookiecutter to create an Informal IMRaD-like Layout project.
 
 ```bash
 cookiecutter https://github.com/faranalytics/data_science_project.git --checkout informal_layout_cookiecutter
@@ -205,9 +213,7 @@ The example project contains a pipeline defined in `__main__.py`.  You can run t
 python -m package
 ```
 
-## Create a Data Science Project Using the Cookiecutter
-
-### Instructions
+### Create a Data Science Project Using the Cookiecutter
 
 You can use the Cookiecutter package to create a customized instance of The Data Science Project.
 
