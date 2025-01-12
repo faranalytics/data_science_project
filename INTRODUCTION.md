@@ -96,7 +96,7 @@ In this example you will clone the repository, explore its layout, install it, a
 git clone https://github.com/faranalytics/data_science_project.git
 ```
 
-#### Checkout the repository.
+#### Checkout the branch.
 
 ```bash
 git checkout formal_flat_layout
