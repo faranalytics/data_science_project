@@ -40,6 +40,7 @@ You can [create an informal layout project using the Cookiecutter](#create-an-in
     │   └── README.md
     │
     ├── methods ⬅ You can put your utility functions and notebooks in the methods directory.
+    │   │
     │   ├── main.ipynb
     │   │
     │   └── README.md
