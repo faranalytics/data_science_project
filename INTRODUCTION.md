@@ -33,7 +33,7 @@ You can [create an informal layout project using the Cookiecutter](#create-an-in
 #### The directory structure looks like this.
 
 ```
-├── project ⬅ This is the project directory.  Optionally chose a name for your project.
+├── project ⬅ This is the project directory.
     │
     ├── materials ⬅ You can put your datasets and models in the materials directory.
     │   │
