@@ -16,7 +16,7 @@ In the data science domain projects are sometimes shared as an informal assembla
 
 ## The Informal Layout
 
-The Informal Layout isn't installable; however, it's [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like layout makes its organization immediately recognizable to persons working in the science domains.
+The Informal Layout isn't installable; however, its [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like layout makes its organization immediately recognizable to persons working in the science domains.
 
 ### Features
 - A simple [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like layout.
