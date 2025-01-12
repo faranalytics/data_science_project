@@ -4,7 +4,7 @@ The [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like Python project templates f
 
 ## Introduction
 
-In the data science domain projects are sometimes shared as an informal assemblage of scripts. This repository proposes two [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like layouts that can be used for organizing a data science project.  The "[Informal IMRaD-like Layout](#an-informal-imrad-like-layout)" is a Python project organized into `materials`, `methods`, and `results` directories.  The "[Formal IMRaD Flat Layout"](#a-formal-imrad-like-flat-layout)" is a conventional installable Python [flat-layout](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/) project that can be built and distributed as a package and published to PyPI.
+In the data science domain projects are sometimes shared as an informal assemblage of scripts. This repository proposes two [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like layouts that can be used for organizing a data science project.  The "[Informal IMRaD-like Layout](#an-informal-imrad-like-layout)" is a Python project organized into `materials`, `methods`, and `results` directories.  The "[Formal IMRaD Flat Layout](#a-formal-imrad-like-flat-layout)" is a conventional installable Python [flat-layout](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/) project that can be built and distributed as a package and published to PyPI.
 
 ## Table of Contents
 
@@ -20,7 +20,7 @@ In the data science domain projects are sometimes shared as an informal assembla
 
 ## An Informal IMRaD-like Layout
 
-The Informal [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like Layout is a useful and intuitive project layout.  It also serves as an introduction to the [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like layout for data science projects.  It isn't installable; however, its [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like naming convention makes its organization immediately recognizable to persons working in the science domains.
+The Informal [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like Layout is a useful and intuitive project layout.  It also serves as an introduction to the [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like layouts for data science projects.  It isn't installable; however, its [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like naming convention makes its organization immediately recognizable to persons working in the science domains.
 
 ### Features
 
