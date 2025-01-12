@@ -95,6 +95,12 @@ In this example you will clone the repository, explore its layout, install it, a
 git clone https://github.com/faranalytics/data_science_project.git
 ```
 
+#### Checkout the repository.
+
+```bash
+git checkout formal_flat_layout
+```
+
 #### Change directory into the repository's project directory.
 
 This is the top-level directory of a conventional Python package.
