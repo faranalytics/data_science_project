@@ -24,7 +24,7 @@ The Informal Layout isn't installable; however, it's [IMRaD](https://en.wikipedi
 
 ### Explore the Project Layout
 
-You can clone this repository in order to explore the project layout.  If you want to start a new project, you can [create a project using the Cookiecutter](#create-a-data-science-project-using-the-cookiecutter).
+You can clone this repository in order to explore the project layout.  If you want to start a new project, you can [create an informal layout project using the Cookiecutter](#create-a-data-science-project-using-the-cookiecutter).
 
 #### The directory structure looks like this.
 
@@ -38,6 +38,7 @@ You can clone this repository in order to explore the project layout.  If you wa
     └── results ⬅ You can put the outputs of your scripts (e.g., tables and visualizations) in the results directory.
         └── README.md
 
+## Create a data science project using the Cookiecutter.
 
 ## The Formal Flat Layout
 
