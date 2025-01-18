@@ -10,6 +10,7 @@ In the data science domain projects are sometimes shared as an informal assembla
 
 - [An informal IMRaD-like layout](#an-informal-imrad-like-layout)
 - [A formal IMRaD-like flat layout](#a-formal-imrad-like-flat-layout)
+- [Support](#support)
 
 ## An informal IMRaD-like layout
 
@@ -49,7 +50,7 @@ You can [create an informal layout project using the Cookiecutter](#create-an-in
     └── .gitignore
 ```
 
-### Create an informal IMRaD-like layout Data Science Project using the cookiecutter
+### Create an informal IMRaD-like layout Data Science Project using the Cookiecutter
 
 #### Install the Cookiecutter package.
 
@@ -57,7 +58,7 @@ You can [create an informal layout project using the Cookiecutter](#create-an-in
 pip install cookiecutter
 ```
 
-#### Use the Cookiecutter to create an Informal IMRaD-like Layout project.
+#### Use the Cookiecutter to create an informal IMRaD-like layout project.
 
 ```bash
 cookiecutter https://github.com/faranalytics/data_science_project.git --checkout informal_layout_cookiecutter
@@ -77,7 +78,7 @@ One important advantage of this approach is that utility functions can be conven
 - Relative package imports from within notebooks
 - Pipeline definitions
 
-## Explore the project layout
+### Explore the project layout
 
 You can clone this repository and follow this short tutorial in order to explore the project layout.  If you want to start a new project, you can [create a project using the Cookiecutter](#create-a-formal-imrad-like-flat-layout-data-science-project-using-the-cookiecutter).
 
@@ -233,7 +234,7 @@ pip install cookiecutter
 #### Use the Cookiecutter to create a Data Science Project from the cookiecutter branch.
 
 ```bash
-cookiecutter https://github.com/faranalytics/data_science_project.git --checkout cookiecutter
+cookiecutter https://github.com/faranalytics/data_science_project.git --checkout formal_flat_layout_cookiecutter
 ```
 
 #### Complete the Cookiecutter form.
@@ -268,13 +269,13 @@ An editable install, also known as a development install, will make changes to y
 pip install -e .
 ```
 
-## Specify dependencies
+### Specify dependencies
 
 You can add dependencies to your project by modifying the `dependencies` section of the `pyproject.toml`.  
 
-### Add a package dependency to your project
+#### Add a package dependency to your project.
 
-#### Include the Pandas package.
+##### Include the Pandas package.
 
 You can include the `pandas` package, for example, by adding it to the list of `dependencies`.
 
@@ -295,7 +296,7 @@ dependencies = [
 pip install -e .
 ```
 
-## Create a pipeline
+### Create a pipeline
 
 You can use `__main__.py` in order to define your project's pipeline.  Once your package is installed and your pipeline is defined in your `__main__.py` module, you can run your package's pipeline using the `-m` option.
 ```bash
@@ -306,6 +307,12 @@ python -m <your-package-name>
 
 The [`__main__.py`](https://github.com/faranalytics/data_science_project/blob/main/project/package/__main__.py) module in this repository shows how you can use [papermill](https://papermill.readthedocs.io/en/latest/index.html) to easily construct a notebook pipeline.
 
-## Publish your package
+### Publish your package
 
 You can publish your package by following the instructions in the [tutorial](https://packaging.python.org/en/latest/tutorials/packaging-projects/).  Alternatively, you can use the [Hatch](https://hatch.pypa.io/latest/) CLI tool in order to build and publish your project.
+
+## Support
+
+If you have a feature request or run into any issues, feel free to submit an [issue](https://github.com/faranalytics/data_science_project/issues) or start a [discussion](https://github.com/faranalytics/data_science_project/discussions). You’re also welcome to reach out directly to one of the authors.
+
+- [Adam Patterson](https://github.com/adamjpatterson)
