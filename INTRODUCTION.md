@@ -6,19 +6,12 @@ The [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like Python project templates f
 
 In the data science domain projects are sometimes shared as an informal assemblage of scripts. This repository proposes two [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like layouts that can be used for organizing a data science project.  The "[Informal IMRaD-like Layout](#an-informal-imrad-like-layout)" is a Python project organized into `materials`, `methods`, and `results` directories.  The "[Formal IMRaD-like Flat Layout](#a-formal-imrad-like-flat-layout)" is a conventional installable Python [flat-layout](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/) project that can be built and distributed as a package and published to PyPI.
 
-## Table of Contents
+## Table of contents
 
-- [An Informal IMRaD-like Layout](#an-informal-imrad-like-layout)
-  - [Explore the Project Layout](#explore-the-project-layout)
-  - [Create an Informal IMRaD-like Layout Data Science Project Using the Cookiecutter](#create-an-informal-imrad-like-layout-data-science-project-using-the-cookiecutter)
-- [A Formal IMRaD-like Flat Layout](#a-formal-imrad-like-flat-layout)
-  - [Explore the Project Layout](#explore-the-project-layout-1)
-  - [Create a Formal IMRaD-like Flat Layout Data Science Project Using the Cookiecutter](#create-a-formal-imrad-like-flat-layout-data-science-project-using-the-cookiecutter)
-  - [Specify Dependencies](#specify-dependencies)
-  - [Create a Pipeline](#create-a-pipeline)
-  - [Publish Your Package](#publish-your-package)
+- [An informal IMRaD-like layout](#an-informal-imrad-like-layout)
+- [A formal IMRaD-like flat layout](#a-formal-imrad-like-flat-layout)
 
-## An Informal IMRaD-like Layout
+## An informal IMRaD-like layout
 
 The Informal [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like Layout is a useful and intuitive project layout.  It also serves as an introduction to the IMRaD-like layouts for data science projects.  It isn't installable; however, its IMRaD-like naming convention makes its organization immediately recognizable to persons working in the science domains.
 
@@ -26,7 +19,7 @@ The Informal [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like Layout is a usefu
 
 - A simple [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like layout.
 
-### Explore the Project Layout
+### Explore the project layout
 
 You can [create an informal layout project using the Cookiecutter](#create-an-informal-imrad-like-layout-data-science-project-using-the-cookiecutter).
 
@@ -56,7 +49,7 @@ You can [create an informal layout project using the Cookiecutter](#create-an-in
     └── .gitignore
 ```
 
-### Create an Informal IMRaD-like Layout Data Science Project Using the Cookiecutter
+### Create an informal IMRaD-like layout Data Science Project using the cookiecutter
 
 #### Install the Cookiecutter package.
 
@@ -70,7 +63,7 @@ pip install cookiecutter
 cookiecutter https://github.com/faranalytics/data_science_project.git --checkout informal_layout_cookiecutter
 ```
 
-## A Formal IMRaD-like Flat Layout
+## A formal IMRaD-like flat layout
 
 The Formal [IMRaD](https://en.wikipedia.org/wiki/IMRAD)-like Flat Layout project template describes an approach for organizing your data science project using a conventional Python "[flat-layout](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/)" project layout. It follows formal conventions for packaging a Python project. You install it into your environment just like an ordinary Python package. It consists of a single package with an IMRaD-like layout; it contains `materials`, `methods`, and `results` sub-packages. Project dependencies are specified in the `pyproject.toml` file.
 
@@ -84,7 +77,7 @@ One important advantage of this approach is that utility functions can be conven
 - Relative package imports from within notebooks
 - Pipeline definitions
 
-## Explore the Project Layout
+## Explore the project layout
 
 You can clone this repository and follow this short tutorial in order to explore the project layout.  If you want to start a new project, you can [create a project using the Cookiecutter](#create-a-formal-imrad-like-flat-layout-data-science-project-using-the-cookiecutter).
 
@@ -227,7 +220,7 @@ The example project contains a pipeline defined in `__main__.py`.  You can run t
 python -m package
 ```
 
-### Create a Formal IMRaD-like Flat Layout Data Science Project Using the Cookiecutter
+### Create a formal IMRaD-like flat layout Data Science Project using the Cookiecutter
 
 You can use the Cookiecutter package to create a customized instance of The Data Science Project.
 
@@ -275,11 +268,11 @@ An editable install, also known as a development install, will make changes to y
 pip install -e .
 ```
 
-## Specify Dependencies
+## Specify dependencies
 
 You can add dependencies to your project by modifying the `dependencies` section of the `pyproject.toml`.  
 
-### Add a Package Dependency to Your Project
+### Add a package dependency to your project
 
 #### Include the Pandas package.
 
@@ -302,7 +295,7 @@ dependencies = [
 pip install -e .
 ```
 
-## Create a Pipeline
+## Create a pipeline
 
 You can use `__main__.py` in order to define your project's pipeline.  Once your package is installed and your pipeline is defined in your `__main__.py` module, you can run your package's pipeline using the `-m` option.
 ```bash
@@ -313,6 +306,6 @@ python -m <your-package-name>
 
 The [`__main__.py`](https://github.com/faranalytics/data_science_project/blob/main/project/package/__main__.py) module in this repository shows how you can use [papermill](https://papermill.readthedocs.io/en/latest/index.html) to easily construct a notebook pipeline.
 
-## Publish Your Package
+## Publish your package
 
 You can publish your package by following the instructions in the [tutorial](https://packaging.python.org/en/latest/tutorials/packaging-projects/).  Alternatively, you can use the [Hatch](https://hatch.pypa.io/latest/) CLI tool in order to build and publish your project.
